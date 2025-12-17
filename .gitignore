@@ -22,3 +22,11 @@ crash.*.log
 # OpenTofu/Terraform
 .terraform/
 terraform/.terraform/
+
+# OpenTofu/Terraform state (do not commit)
+terraform.tfstate
+terraform.tfstate.*
+*.tfstate
+*.tfstate.*
+.crash.log
+.terraform/
