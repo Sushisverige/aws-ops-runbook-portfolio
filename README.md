@@ -8,3 +8,7 @@
 - Deploy: `cd terraform && tofu init && tofu apply`
 - Check nginx via SSM: `runbooks/nginx-healthcheck.md`
 - Destroy: `cd terraform && tofu destroy`
+
+## Safety
+- `.terraform/` や `terraform.tfstate` はリポジトリに含めません（ローカル専用）
+- 検証後は `tofu destroy` で必ず削除します
